@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Sleep-Blog</title>
+    <link rel="icon" type="image/png" href="https://yt3.googleusercontent.com/OQ2GRAJzSHYZk_IoXq3H-JnVxb_wTd0bupa3pKpBeUsrMGCywfyUQESxCBhcZwscLCZXIhdWeg=s900-c-k-c0x00ffffff-no-rj">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #1e1b37;
+        color: white;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background-color: #1e1b37;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 34px;
+        font-weight: bold;
+    }
+
+    .logo img {
+        width: 80px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 80px;
+        margin-top: 15px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        text-decoration: capitalize;
+        font-size: 20px;
+        padding: 0 10px;
+        margin: 0 30;
+        font-weight: 600;
+        position: relative;
+    }
+
+
+    nav a:hover {
+        color: lightgreen;
+    }
+
+    nav a::before {
+        content: " ";
+        position: absolute;
+        bottom: -10px;
+        width: 0%;
+        left: 0;
+        height: 3px;
+        background-color: #e15c6b;
+        transition: all .2s;
+
+    }
+
+    nav a:hover::before {
+        width: 100%;
+
+    }
+
+    .auth-buttons {
+        font-weight: bold;
+        display: flex;
+        gap: 15px;
+        border-radius: 22px;
+    }
+
+    .auth-buttons a:hover {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+        transform: scale(1.1);
+        color: white;
+    }
+
+    .auth-buttons a {
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .login {
+        color: white;
+        background: none;
+        border: 1px solid white;
+        padding: 8px 20px;
+        border-radius: 20px;
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding: 20px;
+    }
+
+
+    .featured {
+        flex: 2;
+        margin-left: 90px;
+    }
+
+    .featured-image img {
+
+        width: 100%;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .featured-info h2 {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    .featured-info h1 {
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+
+    .featured-info p {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+
+    .side-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        display: flex;
+        gap: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        padding: 20px;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .card img {
+
+        border-radius: 10px;
+        width: 200px;
+        height: 150px;
+    }
+
+    .card h3 {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .card h4 {
+        font-size: 1rem;
+        color: #ffffff;
+        margin: 5px 0;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .container4 {
+        padding: 2rem;
+
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: wheat;
+        margin-top: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+
+    .card1 {
+        background-color: #2A2A4D;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card1:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card1 img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .category {
+        font-size: 0.9rem;
+        color: #AAAAAA;
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+        color: #FFFFFF;
+    }
+
+    .meta {
+        font-size: 0.9rem;
+        color: #AAAAAA;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://yt3.googleusercontent.com/OQ2GRAJzSHYZk_IoXq3H-JnVxb_wTd0bupa3pKpBeUsrMGCywfyUQESxCBhcZwscLCZXIhdWeg=s900-c-k-c0x00ffffff-no-rj"
+                    alt="BetterSleep Logo">
+                BetterSleep
+            </div>
+            <a href="index.html">Home</a>
+            <a href="#Sleep Science">Sleep Science</a>
+            <a href="#Meditation">Meditation</a>
+            <a href="#Sleep Sounds">Sleep Sounds</a>
+            <a href="org.html">Blog</a>
+            <div class="auth-buttons">
+                <a href="login.html" class="login" target="_blank">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="featured">
+            <div class="featured-image">
+                <img src="https://play-lh.googleusercontent.com/yTaCB5nczruUkzrtIZ31sYGvmLoEUTVJHqXRcQs5ufvRxO-SkxaDeeo2v-Yi22levDM=w648-h364-rw"
+                    alt="Featured content">
+            </div>
+            <div class="featured-info">
+                <h2>News / Lifestyle / Wellness</h2>
+                <h1>
+                    A North Pole-Approved Bedtime Routine: Settle In for a Cozy Night with Scout Elf Captain and Santa’s
+                    Elf Pets®
+                </h1>
+                <p>November 27, 2024 • 4 min read</p>
+            </div>
+            <div class="container4">
+                <h1>1. Lifestyle</h1>
+                <div class="grid">
+                    <div class="card1">
+                        <img src="https://www.bettersleep.com/_next/image?url=https://cdn.sanity.io/images/h2htgsnz/production/1aceac7a269bdfc39c78b9456c066fab1fc40b88-1080x1080.jpg?fit=max&auto=format&w=3840&q=75"
+                            alt="Sleep Impact">
+                        <div class="content">
+                            <p class="category">Lifestyle</p>
+                            <h2>How Does Sleep Impact Productivity?</h2>
+                            <p class="meta">September 11, 2024 · 4 min read</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://www.bettersleep.com/_next/image?url=https://cdn.sanity.io/images/h2htgsnz/production/96ea83d421dee5f7d28f4d3e267b0904878e0599-550x550.png?fit=max&auto=format&w=3840&q=75"
+                            alt="Fix Bed">
+                        <div class="content">
+                            <p class="category">Sleep / Lifestyle</p>
+                            <h2>The New Way of Telling Bedtime Stories</h2>
+                            <p class="meta">November 5, 2024 • 9 min read</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://www.bettersleep.com/_next/image?url=https://cdn.sanity.io/images/h2htgsnz/production/a1e2f7b19f1f13084c06c1de9083a24f31ec4096-550x550.png?fit=max&auto=format&w=3840&q=75"
+                            alt="Fix Bed">
+                        <div class="content">
+                            <p class="category">Sleep / Lifestyle</p>
+                            <h2>How to Fix a Squeaky Bed</h2>
+                            <p class="meta">December 9, 2024 · 6 min read</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://www.bettersleep.com/_next/image?url=https://cdn.sanity.io/images/h2htgsnz/production/e873161355147e22cf489ecd2cf2890f49e353ff-550x550.png?fit=max&auto=format&w=3840&q=75"
+                            alt="Fix Bed">
+                        <div class="content">
+                            <p class="category">Sleep / Lifestyle</p>
+                            <h2>Mindful Listening</h2>
+                            <p class="meta">December 6, 2024 • 6 min read</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://www.bettersleep.com/_next/image?url=https://cdn.sanity.io/images/h2htgsnz/production/0ed61d3476e57d6233be54a5408e9d033bf40a8d-550x550.png?fit=max&auto=format&w=3840&q=75"
+                            alt="Fix Bed">
+                        <div class="content">
+                            <p class="category">Sleep / Lifestyle</p>
+                            <h2>Benefits of Gratitude</h2>
+                            <p class="meta">November 17, 2024 • 22 min read</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://www.bettersleep.com/_next/image?url=https://cdn.sanity.io/images/h2htgsnz/production/357f03474b2d8cb9dd3078c6c359cafc5ba9106b-550x550.png?fit=max&auto=format&w=3840&q=75"
+                            alt="Fix Bed">
+                        <div class="content">
+                            <p class="category">Sleep / Lifestyle</p>
+                            <h2>Plants for Depression</h2>
+                            <p class="meta">November 12, 2024 • 6 min read</p>
+                        </div>
+                    </div>
+
+                    <!-- Add more cards as needed -->
+                </div>
+
+                <h1>2. Mental Health</h1>
+                <div class="grid">
+                    <div class="card1">
+                        <img src="https://www.bettersleep.com/_next/image?url=https://cdn.sanity.io/images/h2htgsnz/production/7fa1cad38e736664c36c9f01175a41fc2d06e35b-550x550.png?fit=max&auto=format&w=3840&q=75"
+                            alt="Holiday Stress">
+                        <div class="content">
+                            <p class="category">Mental Health / Wellness</p>
+                            <h2>How to Cope with Holiday Depression and Stress</h2>
+                            <p class="meta">December 8, 2024 · 5 min read</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://www.ketk.com/wp-content/uploads/sites/34/2023/02/1040x585-2021-0826-best-alo-yoga-top-5858b2.jpg?w=1280"
+                            alt="Holiday Stress">
+                        <div class="content">
+                            <p class="category">Mental Health / Wellness</p>
+                            <h2>What is Holotropic Breathwork?</h2>
+                            <p class="meta">December 10, 2024 · 5 min read</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://www.bettersleep.com/_next/image?url=https://cdn.sanity.io/images/h2htgsnz/production/7eb358ed89253bcba53d043895244236984b7dc9-550x550.png?fit=max&auto=format&w=3840&q=75"
+                            alt="Holiday Stress">
+                        <div class="content">
+                            <p class="category">Mental Health / Wellness</p>
+                            <h2>11 Ways to Cope With Stress</h2>
+                            <p class="meta">December 13, 2024 · 7 min read</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://www.bettersleep.com/_next/image?url=https://cdn.sanity.io/images/h2htgsnz/production/7512469b884ba5cd43817b5a006d372b4f200dec-550x550.png?fit=max&auto=format&w=3840&q=75"
+                            alt="Holiday Stress">
+                        <div class="content">
+                            <p class="category">Mental Health / Wellness</p>
+                            <h2>How BetterSleep Can Help with Anxiety</h2>
+                            <p class="meta">January 8, 2024 · 5 min read</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://www.bettersleep.com/_next/image?url=https://cdn.sanity.io/images/h2htgsnz/production/2b9f6c0a755342ef8fb31aee7a240e1cd3964bb4-550x550.png?fit=max&auto=format&w=3840&q=75"
+                            alt="Holiday Stress">
+                        <div class="content">
+                            <p class="category">Mental Health / Wellness</p>
+                            <h2>How to Use Meditation For Anger Control</h2>
+                            <p class="meta">September 15, 2024 • 16 min read</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="https://www.bettersleep.com/_next/image?url=https://cdn.sanity.io/images/h2htgsnz/production/5364e94102041ee103770f79a3611719e1a57d9a-550x550.png?fit=max&auto=format&w=3840&q=75"
+                            alt="Holiday Stress">
+                        <div class="content">
+                            <p class="category">Mental Health / Wellness</p>
+                            <h2>Can Lavender Help with Anxiety?</h2>
+                            <p class="meta">November 12, 2024 • 20 min read</p>
+                        </div>
+                    </div>
+                    <!-- Add more cards -->
+                </div>
+            </div>
+        </section>
+        <aside class="side-content">
+            <div class="card">
+                <img src="https://www.bettersleep.com/_next/image?url=https://cdn.sanity.io/images/h2htgsnz/production/3170b61f224e5c040990d31b8473b54d2702edd5-2400x1100.png?fit=max&auto=format&w=3840&q=75"
+                    alt="News">
+                <div>
+                    <h3>News</h3>
+                    <h4>A Magical Journey to Oz: Cynthia Erivo’s New Storytelling Adventure</h4>
+                    <p>October 31, 2024 • 3 min read</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShaFdzHZq5-T8-_DkvzrkVHk6MQvrFEcKrah7osnd7exSRX-99"
+                    alt="Sleep">
+                <div>
+                    <h3>Sleep</h3>
+                    <h4>An Extra Hour of Sleep: Create a Morning Routine That Sticks</h4>
+                    <p>October 22, 2024 • 5 min read</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1i5mWOOjxLiG002rHZW5EX9ikRKjhAc5vX63C7VpvRXcqRpai"
+                    alt="Wellness / News">
+                <div>
+                    <h3>Wellness / News</h3>
+                    <h4>ADHD and Sleep: How Mindfulness Can Help You Drift Off</h4>
+                    <p>October 3, 2024 • 5 min read</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+</body>
+
+</html>
