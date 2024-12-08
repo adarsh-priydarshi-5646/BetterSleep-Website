@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.Deve {
+    width: 100%;
+    height: 100vh;
+}
+
+.back-img {
+    background: url(https://images.pexels.com/photos/360912/pexels-photo-360912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) center center/cover;
+    width: 100%;
+    height: 100vh;
+}
+.laux{
+    height:10vh;
+}
+
+.back-img {
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.alag{
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+}
+
+.back-img p{
+
+    font-size: 20px;
+    color: #c8ed11;
+
+}
+.back-img h1{
+    font-size: 68px;
+}
+
+
+.main{
+    display: flex;
+    width: 100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.clinic p{
+    font-size: 25px;
+}
+
+.pushpa {
+    height: 5vh;
+}
+
+.itm p{
+    font-size: 25px;
+}
+
+
+.txt-img{
+    height: 20vh;
+
+}
+
+
+
+.list1 p{
+    font-size: 55px;
+    height: 6vh;
+    text-align: left;
+
+}
+
+.list1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(247,247,247);
+    align-items: center;
+    gap:50px;
+
+}
+.list1 p{
+    align-self: flex-start;
+    padding-top:  50px;
+}
+
+.spc-sm {
+    width: 50%;
+}
+
+
+.jack{
+    height: 15vh;
+}
+
+.jass-manak ul li{
+    height: 25vh;
+
+}
+
+.jass-manak{
+    font-size: 25px;   
+}
+
+
+
+.spak{
+    height: 3vh;
+}
+
+.mom li{
+    height: 10vh;
+    
+}
+.mom {
+    font-size: 20px;
+}
+
+
+
+
+.footer {
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 10em;
+    filter: brightness(100);
+}
+
+.foo a {
+    margin: 10px;
+}
+
+.insta {
+    width: 2.5em;
+    filter: invert();
+}
+
+.copyright {
+    color: white;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.madeby {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+
+
