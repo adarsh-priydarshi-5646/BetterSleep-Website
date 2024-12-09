@@ -246,6 +246,7 @@ main {
 .footer .bottom-text {
   margin-top: 30px;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .container1 {
