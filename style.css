@@ -232,8 +232,15 @@ main {
   cursor: pointer;
 }
 
+.social-icons{
+  color: white;
+  transition: color 0.4s ease;
+
+}
+
 .social-icons i:hover {
-  color: #00c8a8;
+  color: blueviolet;
+  transition: color 0.4s ease;
 }
 
 .footer .bottom-text {
