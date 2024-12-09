@@ -92,7 +92,7 @@ p {
     color: white;
 }
 
-button {
+button22 {
     padding: 12px 22px;
     font-size: 20px;
     border-radius: 9999px;
@@ -110,7 +110,7 @@ button {
 .guide {
     display: flex;
 
-    .content {
+    .content22 {
         flex: 1;
 
         h1 {
