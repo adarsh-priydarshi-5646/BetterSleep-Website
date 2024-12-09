@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e1b37;
+    color: white
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px 50px; */
+    background-color: #1e1b37;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 80px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-decoration: capitalize;
+    font-size: 20px;
+    padding: 0 10px;
+    margin: 0 30;
+    font-weight: 600;
+    position: relative;
+
+}
+
+
+nav a:hover {
+    color: lightgreen;
+}
+
+nav a::before {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    width: 0%;
+    left: 0;
+    height: 3px;
+    background-color: #e15c6b;
+    transition: all .2s;
+
+}
+
+nav a:hover::before {
+    width: 100%;
+
+}
+
+
+h1 {
+    font-size: 87px;
+    color: white;
+}
+
+h2 {
+    font-size: 57px;
+    color: white
+}
+
+h3 {
+    font-size: 20px;
+    color: white;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+}
+
+button {
+    padding: 12px 22px;
+    font-size: 20px;
+    border-radius: 9999px;
+    background-color: gold;
+    display: flex;
+    margin-top: 26px;
+}
+
+.container {
+    max-width: 1065px;
+    margin: 0 auto
+}
+
+
+.guide {
+    display: flex;
+
+    .content {
+        flex: 1;
+
+        h1 {
+            line-height: 1;
+        }
+
+        p {
+            margin-top: 28px;
+        }
+    }
+
+    .content22 img {
+        flex: 1;
+        width: 100%;
+    }
+}
+
+.healthy {
+    display: flex;
+    gap: 45px;
+
+    .health {
+        flex: 1;
+
+        h1 {
+            line-height: 1;
+        }
+
+        p {
+            margin-top: 50px;
+        }
+
+        h3 {
+            margin-top: 200px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .health img {
+        float: left;
+        flex: 1;
+        width: 100%;
+    }
+}
+
+.wellness {
+    display: flex;
+    gap: 45px;
+
+    .well {
+        flex: 1;
+
+        h1 {
+            line-height: 1;
+        }
+
+        p {
+            margin-top: 50px;
+        }
+
+        h3 {
+            margin-top: 120px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .well img {
+        flex: 1;
+        width: 100%;
+    }
+}
+
+.solution {
+    display: flex;
+    gap: 45px;
+
+    .sol {
+        flex: 1;
+
+        h1 {
+            line-height: 1;
+        }
+
+        p {
+            margin-top: 50px;
+        }
+
+        h3 {
+            margin-top: 120px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .sol img {
+        flex: 1;
+        width: 100%;
+    }
+}
+
+.bene {
+    margin-top: 50px;
+    display: flex;
+}
+
+.a {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.b {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.c {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.hands {
+    margin-top: 174px;
+    text-align: center;
+}
+.upar {
+    margin-top: 25px;
+}
+
+
+.img {
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.uses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+.use {
+    /* width: 500px;
+    height: 500px; */
+    margin: 20px;
+}
+.i1{
+    background-image: url(iim1.webp);
+}
+.i2{
+    background-image: url(iim2.webp);
+}
+.i3{
+    background-image: url(iimg3.webp);
+}
+.bene{
+    height: auto;
+    width: auto;
+
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+}
+.employ{
+    margin-top: 150px;
+}
