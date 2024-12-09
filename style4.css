@@ -13,14 +13,14 @@ header {
     background-color: #1e1b37;
 }
 
-.logo6 {
+.logo22 {
     display: flex;
     align-items: center;
     font-size: 34px;
     font-weight: bold;
 }
 
-.logo6 img {
+.logo22 img {
     width: 100px;
     margin-right: 20px;
     border-radius: 50%;
@@ -101,13 +101,13 @@ button22 {
     margin-top: 26px;
 }
 
-.container5 {
+.container22 {
     max-width: 1065px;
     margin: 0 auto
 }
 
 
-.guide {
+.guide22 {
     display: flex;
 
     .content22 {
@@ -128,11 +128,11 @@ button22 {
     }
 }
 
-.healthy {
+.healthy22 {
     display: flex;
     gap: 45px;
 
-    .health {
+    .health22 {
         flex: 1;
 
         h1 {
@@ -149,18 +149,18 @@ button22 {
         }
     }
 
-    .health img {
+    .health22 img {
         float: left;
         flex: 1;
         width: 100%;
     }
 }
 
-.wellness {
+.wellness22 {
     display: flex;
     gap: 45px;
 
-    .well {
+    .well22 {
         flex: 1;
 
         h1 {
@@ -177,17 +177,17 @@ button22 {
         }
     }
 
-    .well img {
+    .well22 img {
         flex: 1;
         width: 100%;
     }
 }
 
-.solution {
+.solution22 {
     display: flex;
     gap: 45px;
 
-    .sol {
+    .sol22 {
         flex: 1;
 
         h1 {
@@ -204,42 +204,42 @@ button22 {
         }
     }
 
-    .sol img {
+    .sol22 img {
         flex: 1;
         width: 100%;
     }
 }
 
-.bene {
+.bene22 {
     margin-top: 50px;
     display: flex;
 }
 
-.a {
+.a22 {
     margin-left: 25px;
     margin-right: 25px;
 }
 
-.b {
+.b22 {
     margin-left: 25px;
     margin-right: 25px;
 }
 
-.c {
+.c22 {
     margin-left: 25px;
     margin-right: 25px;
 }
 
-.hands {
+.hands22 {
     margin-top: 174px;
     text-align: center;
 }
-.upar {
+.upar22 {
     margin-top: 25px;
 }
 
 
-.img {
+.img22 {
     height: 300px;
     width: 300px;
     background-position: center;
@@ -247,7 +247,7 @@ button22 {
     background-size: cover;
 }
 
-.uses {
+.uses22 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -255,21 +255,21 @@ button22 {
     width: auto;
 }
 
-.use {
+.use22 {
     /* width: 500px;
     height: 500px; */
     margin: 20px;
 }
-.i1{
+.img i1{
     background-image: url(iim1.webp);
 }
-.i2{
+.img i2{
     background-image: url(iim2.webp);
 }
-.i3{
+.img i3{
     background-image: url(iimg3.webp);
 }
-.bene{
+.bene22{
     height: auto;
     width: auto;
 
@@ -277,6 +277,6 @@ button22 {
     display: flex;
     border-radius: 5px;
 }
-.employ{
+.employ22{
     margin-top: 150px;
 }
